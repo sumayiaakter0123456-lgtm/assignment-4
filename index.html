@@ -55,13 +55,18 @@
                 class="bg-gray-100 px-8 py-2 rounded-[4px] font-medium text-[12px] text-gray-500"
                 id="rejected-filter-btn">Rejected</button>
         </div>
+        <section id="filtered-section">
+
+
+        </section>
         <section id="allCards">
+
             <!-- card 1 -->
             <div class="flex justify-between mb-[16px] bg-gray-100 p-5">
                 <div class="space-y-6 ">
                     <div>
-                        <h3 class="text-blue-950 font-bold">Mobile First Corp</h3>
-                        <p class="text-gray-500">React Native Developer</p>
+                        <h3 class="mobileName" class="text-blue-950 font-bold">Mobile First Corp</h3>
+                        <p class="heroName" class="text-gray-500">React Native Developer</p>
                     </div>
 
                     <div class="flex gap-4">
@@ -72,19 +77,21 @@
                         <span class="text-gray-500">$130,000 - $175,000</span>
                     </div>
                     <div>
-                        <button class="bg-blue-200 px-4 py-2 rounded-[4px] text-blue-950 font-medium text-[14px] ">NOT
+                        <button class="status"
+                            class="bg-blue-200 px-4 py-2 rounded-[4px] text-blue-950 font-medium text-[14px] ">NOT
                             APPLIED</button>
                         <br>
                         <br>
-                        <P class="text-gray-700">Build cross-platform mobile applications using React Native. Work on
+                        <P class="notes" class="text-gray-700">Build cross-platform mobile applications using React
+                            Native. Work on
                             products used by
                             millions of users worldwide.</P>
                     </div>
 
                     <div class="flex gap-3">
-                        <button
+                        <button class="interview-btn"
                             class="px-3 py-2 rounded-[4px] border-2 border-green-400 text-green-500 font-semibold transition-all">INTERVIEW</button>
-                        <button
+                        <button class="rejected-btn"
                             class="px-3 py-2 rounded-[4px] border-2 border-red-400 text-red-500 font-semibold transition-all">REJECTED</button>
                     </div>
                 </div>
@@ -361,6 +368,8 @@
 
         </section>
     </main>
+
+
 
     <script src="script.js"></script>
 </body>
