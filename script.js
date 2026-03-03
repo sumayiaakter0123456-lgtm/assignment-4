@@ -56,12 +56,14 @@ document.getElementById("job-container").addEventListener("click", function (eve
     const status = card.querySelector(".status");
     if (clickedElement.classList.contains("interview")) {
         status.innerText = "Interviewed";
-        interviewContainer.appendChild(card);
+        const cardClone = card.cloneNode(true);
+        interviewContainer.appendChild(cardClone);
 
     }
     if (clickedElement.classList.contains("rejected")) {
         status.innerText = "Rejected";
-        rejectedContainer.appendChild(card);
+        const cardClone = card.cloneNode(true);
+        rejectedContainer.appendChild(cardClone);
 
     }
     if (clickedElement.classList.contains("delete")) {
